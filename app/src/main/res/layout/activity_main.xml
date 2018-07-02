@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MainActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            card_view:cardCornerRadius="10dp"
+            android:elevation="20dp">
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <android.support.constraint.Guideline
+                    android:id="@+id/v_guideline1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="567dp"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.7" />
+
+                <android.support.constraint.Guideline
+                    android:id="@+id/v_guideline2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="567dp"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.8" />
+
+                <android.support.constraint.Guideline
+                    android:id="@+id/v_guideline3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="567dp"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.3" />
+
+                <android.support.constraint.Guideline
+                    android:id="@+id/v_guideline4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="567dp"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.2" />
+
+
+                <LinearLayout
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintLeft_toLeftOf="@+id/v_guideline3"
+                    app:layout_constraintRight_toLeftOf="@+id/v_guideline4">
+
+                    <android.support.v7.widget.AppCompatImageView
+                        android:id="@+id/window_status"
+                        android:layout_width="50sp"
+                        android:layout_height="50sp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/opened"/>
+
+                    <View
+                        android:layout_width="wrap_content"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="3dp"
+                        android:background="#ededed"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:textAlignment="center"
+                        android:text="Жалюзи:"/>
+
+                    <TextView
+                        android:id="@+id/window_status_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="7dp"
+                        android:text="открыты"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintLeft_toLeftOf="@+id/v_guideline1"
+                    app:layout_constraintRight_toLeftOf="@+id/v_guideline2">
+
+                    <android.support.v7.widget.AppCompatImageView
+                        android:id="@+id/sun_status"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/sun"/>
+                    <View
+                        android:layout_width="wrap_content"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="3dp"
+                        android:background="#ededed"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:textAlignment="center"
+                        android:text="На улице:"/>
+
+                    <TextView
+                        android:id="@+id/sun_status_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="7dp"
+                        android:text="солнечно"/>
+                </LinearLayout>
+
+
+            </android.support.constraint.ConstraintLayout>
+
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            card_view:cardCornerRadius="10dp"
+            android:elevation="20dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="5dp"
+                    android:text="Автоматический контроль"/>
+
+                <android.support.constraint.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <android.support.constraint.Guideline
+                        android:id="@+id/v_guideline5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="567dp"
+                        android:orientation="vertical"
+                        app:layout_constraintGuide_percent="0.5"/>
+
+                    <android.support.constraint.Guideline
+                        android:id="@+id/v_guideline6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="567dp"
+                        android:orientation="vertical"
+                        app:layout_constraintGuide_percent="0.9" />
+
+
+                    <android.support.constraint.Guideline
+                        android:id="@+id/v_guideline7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="567dp"
+                        android:orientation="vertical"
+                        app:layout_constraintGuide_percent="0.1" />
+
+                    <android.support.constraint.Guideline
+                        android:id="@+id/v_guideline8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="567dp"
+                        android:orientation="vertical"
+                        app:layout_constraintGuide_percent="0.7" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        app:layout_constraintLeft_toLeftOf="@+id/v_guideline5"
+                        app:layout_constraintRight_toLeftOf="@+id/v_guideline7">
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="9dp"
+                            android:text="Заданное время"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintLeft_toLeftOf="@+id/v_guideline8"
+                        app:layout_constraintRight_toLeftOf="@+id/v_guideline6">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="9dp"
+                            android:text="Состояние"/>
+
+                    </LinearLayout>
+
+                </android.support.constraint.ConstraintLayout>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/time_recycler_view"
+                    android:layout_marginTop="9dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scrollbars="vertical"/>
+
+                <android.support.v7.widget.AppCompatButton
+                    android:id="@+id/button_settime"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="60sp"
+                    android:layout_marginRight="60sp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="20sp"
+                    android:layout_gravity="center"
+                    android:textAlignment="center"
+                    android:background="@drawable/rounded_button"
+                    android:text="Задать время"/>
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            card_view:cardCornerRadius="10dp"
+            android:elevation="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:text="Ручное управление"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <android.support.constraint.ConstraintLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <android.support.constraint.Guideline
+                        android:id="@+id/v_guideline11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="567dp"
+                        android:orientation="vertical"
+                        app:layout_constraintGuide_percent="0.6" />
+
+                    <android.support.constraint.Guideline
+                        android:id="@+id/v_guideline12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="567dp"
+                        android:orientation="vertical"
+                        app:layout_constraintGuide_percent="0.8" />
+
+                    <android.support.constraint.Guideline
+                        android:id="@+id/v_guideline13"
+                        android:layout_width="wrap_content"
+                        android:layout_height="567dp"
+                        android:orientation="vertical"
+                        app:layout_constraintGuide_percent="0.3"/>
+
+                    <android.support.constraint.Guideline
+                        android:id="@+id/v_guideline14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="567dp"
+                        android:orientation="vertical"
+                        app:layout_constraintGuide_percent="0.2"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        app:layout_constraintLeft_toLeftOf="@+id/v_guideline13"
+                        app:layout_constraintRight_toLeftOf="@+id/v_guideline14">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="center"
+                            android:layout_marginTop="4dp"
+                            android:text="Управление \n жалюзи" />
+
+                        <android.support.v7.widget.SwitchCompat
+                            android:id="@+id/switch_window"
+                            android:layout_gravity="center"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:checked="false"
+                            android:textOff="↓"
+                            android:textOn="↑"
+                            android:layout_marginTop="4dp"
+                            app:showText="true"
+                            tools:ignore="MissingConstraints"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_gravity="center"
+                            android:textAlignment="center"
+                            android:text="закр/откр"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        app:layout_constraintLeft_toLeftOf="@+id/v_guideline11"
+                        app:layout_constraintRight_toLeftOf="@+id/v_guideline12">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="center"
+                            android:layout_marginTop="4dp"
+                            android:text="Управление \n светом" />
+
+                        <android.support.v7.widget.SwitchCompat
+                            android:id="@+id/switch_light"
+                            android:layout_gravity="center"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_centerHorizontal="true"
+                            android:checked="false"
+                            android:layout_marginTop="4dp"
+                            tools:ignore="MissingConstraints"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_gravity="center"
+                            android:textAlignment="center"
+                            android:text="выкл/вкл"/>
+
+
+                    </LinearLayout>
+
+                </android.support.constraint.ConstraintLayout>
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+
+</ScrollView>
